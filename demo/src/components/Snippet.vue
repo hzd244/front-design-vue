@@ -3,7 +3,7 @@ import { ref, getCurrentInstance } from "vue";
 import { tryCopy, scrollToElement } from "@/utils/tools";
 import hljs from "highlight.js";
 
-defineOptions({ name: "YkSnippet" });
+defineOptions({ name: "FrontSnippet" });
 
 const proxy: any = getCurrentInstance()?.proxy;
 const props = defineProps({
@@ -78,7 +78,6 @@ const scrollToDemo = (ev: MouseEvent) => {
 </template>
 
 <style scoped lang="less">
-/* stylelint-disable */
 .case-card {
   margin-top: 28px;
   max-width: 1200px;

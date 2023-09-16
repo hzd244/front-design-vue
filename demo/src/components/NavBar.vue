@@ -59,7 +59,6 @@ const navbarClass = computed(() => {
   transition: background-color @animats;
   box-sizing: border-box;
 
-  /* stylelint-disable-next-line selector-class-pattern */
   ::v-deep(.front-scrollbar__wrap) {
     padding-bottom: 64px;
   }

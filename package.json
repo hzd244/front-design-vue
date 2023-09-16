@@ -1,10 +1,13 @@
 {
-  "name": "front-design-vue",
+  "name": "front-design-monorepo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "workspaces": [
+    "packages/*",
+    "demo"
+  ],
   "scripts": {
-    "prepare": "pnpm --filter @front-design/build build && pnpm gen:icon",
     "dev:demo": "pnpm --filter demo dev",
     "build:demo": "pnpm --filter demo build",
     "preview:demo": "pnpm --filter demo preview",
@@ -12,15 +15,10 @@
     "stylelint": "npx stylelint --aei .vue,.less,.css,.html . --fix",
     "lint": "eslint . && stylelint .",
     "lint:fix": "pnpm run eslint && pnpm run stylelint",
-    "new": "node ./config/script/new-component.mjs",
-    "postinstall": "npx husky install",
-    "preinstall": "npx only-allow pnpm",
-    "version:release": "pnpm --filter @front-design/ui release",
     "build:comp": "pnpm --filter @front-design/ui build:comp",
     "build:less": "pnpm --filter @front-design/ui build:less",
     "gen:icon": "pnpm --filter @front-design/ui gen:icon",
-    "test": "pnpm --filter @front-design/test test",
-    "test:coverage": "pnpm --filter @front-design/test test:coverage"
+    "test": "pnpm --filter @front-design/test test"
   },
   "dependencies": {
     "vue": "^3.3.4"
