@@ -1,0 +1,17 @@
+{
+  "name": "@front-design/ui",
+  "version": "1.0.0",
+  "description": "front-design-ui",
+  "main": "index.js",
+  "author": "hzd244 https://github.com/hzd244",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hzd244/front-design-vue",
+    "directory": "front-design-ui"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
