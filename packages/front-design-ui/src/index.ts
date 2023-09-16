@@ -1,10 +1,14 @@
 import type { Component, App } from "vue";
 
+import FrontButton from "./components/button";
+
 const components: {
   [propName: string]: Component;
-} = {};
+} = {
+  FrontButton,
+};
 
-export {};
+export { FrontButton };
 
 // 全局注册
 export default {
