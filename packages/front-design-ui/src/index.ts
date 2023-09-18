@@ -1,14 +1,18 @@
 import type { Component, App } from "vue";
 
 import FrontButton from "./components/button";
+import FrontIcon from "./components/icon";
+import FrontLink from "./components/link";
 
 const components: {
   [propName: string]: Component;
 } = {
   FrontButton,
+  FrontIcon,
+  FrontLink,
 };
 
-export { FrontButton };
+export { FrontButton, FrontIcon, FrontLink };
 
 // 全局注册
 export default {
