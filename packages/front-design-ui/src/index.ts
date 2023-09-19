@@ -3,6 +3,8 @@ import type { Component, App } from "vue";
 import FrontButton from "./components/button";
 import FrontIcon from "./components/icon";
 import FrontLink from "./components/link";
+import FrontBackTop from "./components/back-top";
+import FrontDivider from "./components/divider";
 
 const components: {
   [propName: string]: Component;
@@ -10,9 +12,11 @@ const components: {
   FrontButton,
   FrontIcon,
   FrontLink,
+  FrontBackTop,
+  FrontDivider,
 };
 
-export { FrontButton, FrontIcon, FrontLink };
+export { FrontButton, FrontIcon, FrontLink, FrontBackTop, FrontDivider };
 
 // 全局注册
 export default {

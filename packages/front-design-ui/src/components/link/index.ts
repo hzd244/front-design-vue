@@ -1,6 +1,6 @@
-import Button from "./src/link.vue";
+import Link from "./src/link.vue";
 import { withInstall } from "../../utils";
 
-export const FrontLink = withInstall(Button);
+export const FrontLink = withInstall(Link);
 export default FrontLink;
 export * from "./src/link";
