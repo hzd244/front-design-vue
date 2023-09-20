@@ -5,6 +5,7 @@ import FrontIcon from "./components/icon";
 import FrontLink from "./components/link";
 import FrontBackTop from "./components/back-top";
 import FrontDivider from "./components/divider";
+import { FrontParagraph, FrontTitle, FrontText } from "./components/typography";
 
 const components: {
   [propName: string]: Component;
@@ -14,9 +15,21 @@ const components: {
   FrontLink,
   FrontBackTop,
   FrontDivider,
+  FrontParagraph,
+  FrontTitle,
+  FrontText,
 };
 
-export { FrontButton, FrontIcon, FrontLink, FrontBackTop, FrontDivider };
+export {
+  FrontButton,
+  FrontIcon,
+  FrontLink,
+  FrontBackTop,
+  FrontDivider,
+  FrontParagraph,
+  FrontTitle,
+  FrontText,
+};
 
 // 全局注册
 export default {
@@ -24,8 +37,8 @@ export default {
     for (const c in components) {
       app.component(c, components[c]);
     }
-    // app.config.globalProperties.$notification = YkNotification;
-    // app.config.globalProperties.$message = YkMessage;
+    // app.config.globalProperties.$notification = FrontNotification;
+    // app.config.globalProperties.$message = FrontMessage;
     // app.directive("loading", vLoading);
   },
 };
