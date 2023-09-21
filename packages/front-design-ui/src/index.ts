@@ -6,6 +6,7 @@ import FrontLink from "./components/link";
 import FrontBackTop from "./components/back-top";
 import FrontDivider from "./components/divider";
 import { FrontParagraph, FrontTitle, FrontText } from "./components/typography";
+import FrontEmpty from "./components/empty";
 
 const components: {
   [propName: string]: Component;
@@ -18,6 +19,7 @@ const components: {
   FrontParagraph,
   FrontTitle,
   FrontText,
+  FrontEmpty,
 };
 
 export {
@@ -29,6 +31,7 @@ export {
   FrontParagraph,
   FrontTitle,
   FrontText,
+  FrontEmpty,
 };
 
 // 全局注册
