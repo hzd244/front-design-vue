@@ -8,6 +8,7 @@ import FrontDivider from "./components/divider";
 import { FrontParagraph, FrontTitle, FrontText } from "./components/typography";
 import FrontEmpty from "./components/empty";
 import FrontSpinner from "./components/spinner";
+import FrontModal from "./components/modal";
 
 const components: {
   [propName: string]: Component;
@@ -22,6 +23,7 @@ const components: {
   FrontText,
   FrontEmpty,
   FrontSpinner,
+  FrontModal,
 };
 
 export {
@@ -35,6 +37,7 @@ export {
   FrontText,
   FrontEmpty,
   FrontSpinner,
+  FrontModal,
 };
 
 // 全局注册
