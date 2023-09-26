@@ -36,7 +36,7 @@ import { computed, ref, toRefs, watch } from "vue";
 import "../style";
 
 defineOptions({
-  name: "YkTooltip",
+  name: "FrontTooltip",
 });
 
 const bem = createCssScope("tooltip");
