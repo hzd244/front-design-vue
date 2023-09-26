@@ -9,6 +9,7 @@ import { FrontParagraph, FrontTitle, FrontText } from "./components/typography";
 import FrontEmpty from "./components/empty";
 import FrontSpinner from "./components/spinner";
 import FrontModal from "./components/modal";
+import FrontTooltip from "./components/tooltip";
 
 const components: {
   [propName: string]: Component;
@@ -24,6 +25,7 @@ const components: {
   FrontEmpty,
   FrontSpinner,
   FrontModal,
+  FrontTooltip,
 };
 
 export {
@@ -38,6 +40,7 @@ export {
   FrontEmpty,
   FrontSpinner,
   FrontModal,
+  FrontTooltip,
 };
 
 // 全局注册
