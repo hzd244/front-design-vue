@@ -11,6 +11,7 @@ import FrontSpinner from "./components/spinner";
 import FrontModal from "./components/modal";
 import FrontTooltip from "./components/tooltip";
 import FrontSkeleton from "./components/skeleton";
+import FrontMessage from "./components/message";
 
 const components: {
   [propName: string]: Component;
@@ -44,6 +45,7 @@ export {
   FrontModal,
   FrontTooltip,
   FrontSkeleton,
+  FrontMessage,
 };
 
 // 全局注册
@@ -53,7 +55,7 @@ export default {
       app.component(c, components[c]);
     }
     // app.config.globalProperties.$notification = FrontNotification;
-    // app.config.globalProperties.$message = FrontMessage;
+    app.config.globalProperties.$message = FrontMessage;
     // app.directive("loading", vLoading);
   },
 };
